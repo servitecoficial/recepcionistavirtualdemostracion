@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="img/png" href="logo.ico">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reservas MI NEGOCIO</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <img src="logo.png" class="imgLogo" />
+
+      <h1 class="formulario__titulo">Aquí va el nombre de su negocio</h1>
+      <h3 class="formulario__subtitulo">Reservas</h3>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario para agendar tu cita en MI NEGOCIO.
+        Esta plataforma es personalizada para cada cliente con su logo y fondo correspondiente. 
+      </p>
+
+      <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu nombre completo"
+      />
+
+      <label for="fecha" class="formulario__label"
+        >Indica la fecha de tu reserva (Esta fecha puede que este disponible)</label
+      >
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+
+      <label for="hora" class="formulario__label"
+        >Indica la hora de tu reserva</label
+      >
+      <input id="hora" type="time" class="formulario__input" />
+
+      <label for="empleado" class="formulario__label"
+        >¿Paga en efectivo o tarjeta?</label
+      >
+      <select id="empleado" name="listaempleados" class="formulario__input">
+        <option>Efectivo.</option>
+        <option>Tarjeta.</option>
+      </select>
+
+      <label for="servicio" class="formulario__label"
+        >¿Cuál es el servicio que se desea realizar?</label
+      >
+      <select id="servicio" name="listaservicios" class="formulario__input">
+        <option>SERVICIO 1 - $VALOR</option>
+        <option>SERVICIO 2 - $VALOR</option>
+        <option>SERVICIO 3 - $VALOR</option>
+        <option>SERVICIO 4 - $VALOR</option>
+        <option>SERVICIO 5 - $VALOR</option>
+      </select>
+
+
+      
+     <p> <label for="virtual" class="formulario__label"
+      >Solo para los que dan servicios on line.</label
+    ></p>
+
+
+      <label for="virtual" class="formulario__label"
+      >¿Por que plataforma desea realizar el servicio?</label
+    >
+    <select id="virtual" name="listaservicios" class="formulario__input">
+      <option>Video llamada whatsapp</option>
+      <option>Zoom</option>
+      <option>Skype</option>
+      <option>Otro</option>
+    </select>
+<div>
+
+
+      <label for="cliente" class="formulario__label">al ser contratado el servicio le va a llegar a su whatsapp la información para que pueda contestarla.</label></div>
+
+      <div><p><label for="cliente" class="formulario__label">El logo/fondo se puede cambiar por los de usted. Se le pueden agregar más campos al formulario.</label></p></div>
+
+      <div><p><label for="cliente" class="formulario__label">La recepcionista virtual puede ser usada como pagina web.</label></p></div>
+
+      <div><p><label for="cliente" class="formulario__label">Se le puede agregar un botón de pago para que pueda realizar sus cobros.</label></p></div>
+
+      
+
+      <a href="https://mpago.la/2Uecx9a" target="_blank"><img src="mercado.png" alt="Mercado pago" /></a>
+
+      <p class="formulario__parrafo">Esta pagina fue creada por Alan Ivan Acosta con el fin de muestra para ventas.</p>
+  
+
+      <div id="respuesta"></div>
+
+
+
+      
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
